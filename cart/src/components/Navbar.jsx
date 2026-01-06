@@ -39,7 +39,7 @@ const Navbar = () => {
             <Nav.Link
               as={Link}
               to="/"
-              className="px-3 text-white d-flex-items-center gap-1 fw-medium"
+              className="px-3 text-white d-flex algin-items-center gap-1 fw-medium"
             >
               {" "}
               <FaHome /> Home
@@ -48,9 +48,8 @@ const Navbar = () => {
             <Nav.Link
               as={Link}
               to="/checkout"
-              className="px-3 text-white d-flex-items-center gap-1 fw-medium"
+              className="px-3 text-white d-flex algin-items-center gap-1 fw-medium"
             >
-            
               <FaShoppingCart /> Cart
               {totalItems > 0 && (
                 <Badge
@@ -59,7 +58,7 @@ const Navbar = () => {
                   className="posation-absolute top-0 start-100 translate-middle bage rounded-pill"
                   style={{ fontSize: "0.8rem" }}
                 >
-                    {totalItems}
+                  {totalItems}
                 </Badge>
               )}
             </Nav.Link>

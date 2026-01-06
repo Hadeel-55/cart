@@ -1,8 +1,10 @@
 import React from "react";
 import { CartProvider } from "./context/CartContext";
-import Home from "./pages/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Checkout from "./pages/Checkout";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 import "./App.css";
 
@@ -15,6 +17,7 @@ function App() {
           <div className="container mt-4">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/checkout" element={<Checkout />} />
               
             </Routes>
           </div>

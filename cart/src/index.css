@@ -8,3 +8,12 @@
     transform: translateY(-10px);
 
 }
+
+.navbar .nav-link:hover{
+    color: #f8d90f !important;
+  
+    transition: 0.2s ease-in-out;
+}
+body{
+    padding-top: 80px;
+}

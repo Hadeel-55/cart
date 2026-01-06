@@ -4,7 +4,7 @@ export const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   useEffect(() => {
-    const savedCard = localStorage.getItem("caet");
+    const savedCard = localStorage.getItem("cart");
     if (savedCard) {
       setCart(JSON.parse(savedCard));
     }
@@ -36,7 +36,7 @@ export const CartProvider = ({ children }) => {
     if (newQuantity < 1) return;
     setCart((prevCart) =>
       prevCart.map((item) =>
-        item === productId ? { ...item, quantity: newQuantity } : item
+        item.id === productId ? { ...item, quantity: newQuantity } : item
       )
     );
   };

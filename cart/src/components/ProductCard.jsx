@@ -64,7 +64,7 @@ const ProductCard = ({ product }) => {
 
         <Button
           onClick={() => addToCart(product)}
-          className="mt-3 rounded-pill fw-semibold d-flex align-center justify-content-center ga-2 text-white"
+          className="mt-3 rounded-pill fw-semibold d-flex align-center justify-content-center gap-2 text-white"
           style={{ background: "linear-gradient(145deg, #8e2de2, #4a00e0" , border:'none' }}
         >
           <FaShoppingCart />
